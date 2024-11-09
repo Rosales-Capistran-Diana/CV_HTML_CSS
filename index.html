@@ -4,104 +4,298 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen - 22550310</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #000000;
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#parte2 {
+    font-style: italic;
+    color: #57cfff;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #57cfff
+}
+
+#img {
+    margin: 20px;
+    width: 300px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#audio {
+    margin: 20px 0;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ccf2fd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label, form p, form select, form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #57cfff;
+}
+table {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #57cfff;
+    color: rgb(0, 0, 0);
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+iframe {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    width: 100%;
+    padding: 15px;
+    background-color: #87b2be;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+
+    #img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    table {
+        max-width: 100%;
+    }
+}
+
+/* Media query for screens up to 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav a {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+
+    #img {
+        max-width: 200px;
+    }
+
+    form {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+    </style>
+
 </head>
 <body>
-    <nav>
-        <a href="main.html">Inicio</a>
-    </nav>
-
-        <header>
-            <h1>Diana Rebeca Rosales Capistrán</h1>
-        </header>
-
-        <div class="container">
-            <aside id="cd">
-                <img src="./Imágenes/foto.jpeg" alt="imagen">
-                <h2>Contacto:</h2>
-                <h3>CORREO ELECTRÓNICO:</h3>
-                <p>L22550310@chihuahua2.tecnm.mx</p><br>
-                <h3>NÚMERO TELEFÓNICO:</h3>
-                <p>614 123 45 67</p><br>
-
-                <h2>DIPLOMAS</h2>
-                <ul>
-                    <li>CENALTEC. Certificado de Ensamble de equipo de cómputo, nivel 1.</li>
-                    <li>CENALTEC. Certificado en Electricidad, nivel 1.</li>
-                    <li>Curso Networking Essentials (Cisco Networking Academy).</li>
-                    <li>Técnico en soporte y mantenimiento de equipo de computo.</li>
-                        
-                </ul>   
-            </aside>
-        </div>
-
-
-    <main id="trabajos">
-        <h2>Experiencia Laboral</h2>
+    <header>
+        <h1 id="parte1">Buenas, bienvenido a mi examen <span id="parte2">sin sentido</span></h1>
         <div>
-            <h3>SurtACe (Tienda mayorista), Cafetería - Trabajo de temporada.</h3>
-            <p>01/2022 – 06/2022.</p>
-            <ul>
-                <li>Servicio al cliente</li> 
-                <li>Control de inventario</li>
-                <li>Manejo de máquinas de espresso y molinillos de café.</li>
-            </ul>
-        </div>
+        <nav><br>
+            <a href="main.html">CV</a>
+        </nav>
+    </div>
+    <br>
+    <p>Pero bueno, yo solo digo que una disculpa pero si metía todo lo que hemos visto en el CV pues no tendría nadota de sentido.</p>
+    </header>
+    
+    
+    <br>
+    <div id="img">
+        <img src="./Imágenes/foto2.jpg" alt="groseriasfuertes">
+    </div>
 
-        <div>
-            <h3>SurtACe (Tienda mayorista), Cajera - Trabajo de temporada.</h3>
-            <p></p>
-            <ul>
-                <li>Atención al cliente</li>
-                <li>Experiencia en el manejo de grandes volúmenes de efectivo</li>
-            </ul>
-        </div>
+    <div id="audio">
+        <audio controls>
+        <source src="Imágenes/aiaiai im ur little butterfly.mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio><br><br>
+    </div>
+    <form action="index.html" method="post">
+        <label for="chismos@">¿Quién chismoseó en mi página?</label>
+        <input type="text" name="chismos@" id="formulario" placeholder="Chismos@">
+        <br>
 
-        <div>
-            <h3>Textron Aviation, departamento de IT – Estudiante de prácticas.</h3>
-            <p>01/2022 – 06/2022.</p>
-                <li>Resolución de problemas de usuarios, de manera presencial, remoto o vía telefónica.</li>
-                <li>Apoyo en tareas administrativas, así como manejo de documentación.</li>
-                <li>Mantenimiento del orden y limpieza en el área de trabajo.</li>
-                <li>Trabajo en equipo para el cumplimiento de los objetivos.</li>
-        </div>
+        <p>Del 1 al 5, ¿qué tan chismos@ se considera? (considere 5 como máximo)</p>
+        <label><input type="radio" name="chismos@" id="5">5</label>
+        <label><input type="radio" name="chismos@" id="4">4</label>
+        <label><input type="radio" name="chismos@" id="3">3</label>
+        <label><input type="radio" name="chismos@" id="2">2</label>
+        <label><input type="radio" name="chismos@" id="1">1</label>
+        <br><br>
 
-        <div>
-            <h3>Zoy, vendedora/cajera – Trabajo de temporada.</h3>
-            <p>11/2022 – 01/2023.</p>
-            <ul>
-                <li>Atención al cliente.</li>
-                <li>Apoyo en el control de inventario y el acomodo de productos en la tienda.</li>
-            </ul>
-        </div>
-        
-        <div>
-            <h3>Ahorrocel, Telcel – Vendedora de mostrador – Trabajo de temporada.</h3>
-            <p>12/2021 – 01/2022. </p>
-            <li>Atención al cliente.</li>
-            <li>Identificar las necesidades del cliente.</li>
-        </div>
+        <label for="chismos@">¿Le gusta el chisme?</label>
+        <select name="chisme">
+            <option value="si">Si</option>
+            <option value="si">Obvio si</option>
+        </select><br><br>
 
-        <div>
-            <h3>MDY – Asesor telefónico – Trabajo de temporada.</h3>
-            <p>06/2021 – 08/2021. </p>
-            <li>Manejo de llamadas de manera respetuosa y eficaz.</li>
-            <li>Comunicación eficiente con los clientes para garantizar una información adecuada.</li>
-            <li>Atención cuidada al cliente.</li> 
-        </div>
+        <input type="submit" value="Enviar">
+    </form>
 
-        <h2>Formación académica.</h2>
-        <div>
-            <h3>Instituto Tecnológico de Chihuahua No.2</h3>
-            <p>08/2022 – En curso. </p>
-            <li>Ingeniería en sistemas computacionales.</li>
-        </div>
+    <br>
+    <table border="1">
+        <tr>
+            <th colspan="11">¿Se sabe las tablas? Aquí le dejo la más difícil</th>
+        </tr>
+        <tr>
+            <th>x</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>6</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </table>
 
-        <div>
-            <h3>Centro de Bachillerato Tecnológico Industrial y Servicios No. 122</h3>
-            <p>08/2019 – 06-2022.</p>
-            <li>Técnico en Soporte y Mantenimiento en el equipo de cómputo.</li>
-        </div>
-    </main>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GJ_JJx6FBs4?si=EFU1wIRMVuRT41Rr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br><br>
+    <footer>
+        <p>2024. Examen Diana Rebeca Rosales Capistrán</p> 
+                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="1.5">
+                    <path d="M14.7 13.5c-1.1 -2 -1.441 -2.5 -2.7 -2.5c-1.259 0 -1.736 .755 -2.836 2.747c-.942 1.703 -2.846 1.845 -3.321 3.291c-.097 .265 -.145 .677 -.143 .962c0 1.176 .787 2 1.8 2c1.259 0 3 -1 4.5 -1s3.241 1 4.5 1c1.013 0 1.8 -.823 1.8 -2c0 -.285 -.049 -.697 -.146 -.962c-.475 -1.451 -2.512 -1.835 -3.454 -3.538z"></path>
+                    <path d="M20.188 8.082a1.039 1.039 0 0 0 -.406 -.082h-.015c-.735 .012 -1.56 .75 -1.993 1.866c-.519 1.335 -.28 2.7 .538 3.052c.129 .055 .267 .082 .406 .082c.739 0 1.575 -.742 2.011 -1.866c.516 -1.335 .273 -2.7 -.54 -3.052z"></path>
+                    <path d="M9.474 9c.055 0 .109 0 .163 -.011c.944 -.128 1.533 -1.346 1.32 -2.722c-.203 -1.297 -1.047 -2.267 -1.932 -2.267c-.055 0 -.109 0 -.163 .011c-.944 .128 -1.533 1.346 -1.32 2.722c.204 1.293 1.048 2.267 1.933 2.267z"></path>
+                    <path d="M16.456 6.733c.214 -1.376 -.375 -2.594 -1.32 -2.722a1.164 1.164 0 0 0 -.162 -.011c-.885 0 -1.728 .97 -1.93 2.267c-.214 1.376 .375 2.594 1.32 2.722c.054 .007 .108 .011 .162 .011c.885 0 1.73 -.974 1.93 -2.267z"></path>
+                    <path d="M5.69 12.918c.816 -.352 1.054 -1.719 .536 -3.052c-.436 -1.124 -1.271 -1.866 -2.009 -1.866c-.14 0 -.277 .027 -.407 .082c-.816 .352 -1.054 1.719 -.536 3.052c.436 1.124 1.271 1.866 2.009 1.866c.14 0 .277 -.027 .407 -.082z"></path>
+                </svg>
+    </footer>
 </body>
 </html>

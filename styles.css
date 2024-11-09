@@ -130,7 +130,7 @@ main li {
     }
     body {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1/2;
         align-items: start;
         font-family: Arial, sans-serif;
         color: #333;
@@ -167,5 +167,14 @@ main li {
     main p, main li {
         font-size: 0.8em;
     }
+    #trabajos {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        
+    }
     
+    main{
+        display: grid;
+        grid-column: 1/2;
+    }
 }

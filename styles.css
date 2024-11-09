@@ -95,7 +95,7 @@ main li {
     margin-bottom: 5px;
     color: #333;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body {
         display: grid;
         grid-template-columns: 1fr;

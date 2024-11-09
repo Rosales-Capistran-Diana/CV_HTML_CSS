@@ -129,13 +129,14 @@ main li {
         font-size: 1.5em;
     }
     body {
-        display: grid;
-        grid-template-columns: 1/2;
-        align-items: start;
-        font-family: Arial, sans-serif;
-        color: #333;
-        background-color: #f4f4f9;
-        padding: 10px;
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+    
+      header, aside, main, #trabajos {
+        width: 100%; 
+      }
     }
     aside {
         width: 55%;
@@ -166,15 +167,5 @@ main li {
 
     main p, main li {
         font-size: 0.8em;
-    }
-    #trabajos {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        
-    }
-    
-    main{
-        display: grid;
-        grid-column: 1/2;
     }
 }

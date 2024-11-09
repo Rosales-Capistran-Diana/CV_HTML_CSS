@@ -58,7 +58,6 @@ aside h2, aside h3 {
 
 aside p, aside li {
     margin-bottom: 10px;
-    font-size: 15px;
 }
 
 #trabajos {
@@ -95,6 +94,7 @@ main li {
     margin-bottom: 5px;
     color: #333;
 }
+
 @media (max-width: 768px) {
     body {
         display: grid;

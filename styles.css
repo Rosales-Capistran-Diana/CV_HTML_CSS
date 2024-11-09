@@ -58,6 +58,7 @@ aside h2, aside h3 {
 
 aside p, aside li {
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 #trabajos {
@@ -96,32 +97,57 @@ main li {
 }
 @media (max-width: 768px) {
     body {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-    }
+        grid-template-columns: 1fr; 
 
     header h1 {
         font-size: 2em;
     }
 
     aside {
-        width: 100%; /* Abarca todo el ancho */
-        max-width: 100%;
+        width: 80%; 
+        max-width: 750%;
         margin: 0 auto 20px auto;
+    }
+    aside img {
+        width: 70%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    aside p, aside li {
+        margin-bottom: 10px;
+        font-size: 10px;
     }
 
     #trabajos, main {
-        grid-column: 1 / -1; /* Abarca todo el ancho en pantallas pequeñas */
+        grid-column: 1 / -1; 
     }
+    
 }
 
-/* Media query para pantallas de hasta 480px */
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.5em;
     }
-
-    aside, main h2 {
+    aside {
+        width: 55%;
+        max-width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    aside img {
+        width: 40%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    main h2 {
         font-size: 1.4em;
+    }
+    aside p, aside li {
+        margin-bottom: 10px;
+        font-size: 8px;
     }
 
     nav a {
